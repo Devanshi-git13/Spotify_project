@@ -76,16 +76,16 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 5. Count the total number of tracks by each artist.
 
 ### Medium Level
-1. Calculate the average danceability of tracks in each album.
-2. Find the top 5 tracks with the highest energy values.
-3. List all tracks along with their views and likes where `official_video = TRUE`.
-4. For each album, calculate the total views of all associated tracks.
-5. Retrieve the track names that have been streamed on Spotify more than YouTube.
+6. Calculate the average danceability of tracks in each album.
+7. Find the top 5 tracks with the highest energy values.
+8. List all tracks along with their views and likes where `official_video = TRUE`.
+9. For each album, calculate the total views of all associated tracks.
+10. Retrieve the track names that have been streamed on Spotify more than YouTube.
 
 ### Advanced Level
-1. Find the top 3 most-viewed tracks for each artist using window functions.
-2. Write a query to find tracks where the liveness score is above the average.
-3. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.**
+11. Find the top 3 most-viewed tracks for each artist using window functions.
+12. Write a query to find tracks where the liveness score is above the average.
+13. **Use a `WITH` clause to calculate the difference between the highest and lowest energy values for tracks in each album.**
 ```sql
 WITH cte
 AS
@@ -103,8 +103,8 @@ FROM cte
 ORDER BY 2 DESC
 ```
    
-5. Find tracks where the energy-to-liveness ratio is greater than 1.2.
-6. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
+14. Find tracks where the energy-to-liveness ratio is greater than 1.2.
+15. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
 
 
 Here’s an updated section for your **Spotify Advanced SQL Project and Query Optimization** README, focusing on the query optimization task you performed. You can include the specific screenshots and graphs as described.
